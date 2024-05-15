@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Reto 2</title>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script type="text/javascript">
+            function funcTrig() {
+                var inicio = parseInt(document.forms[0].inicio.value);
+                var fin = parseInt(document.forms[0].fin.value);
+                var opc = parseInt(document.forms[0].funcion.value);
+                let exp;
+
+                if (opc == 1) {
+                    exp = "Math.sin(x)";
+                } else if (opc == 2) {
+                    exp = "Math.cos(x)";
+                } else if (opc == 3) {
+                    exp = "Math.tan(x)";
+                } else if (opc == 4){
+                    exp = "Math.tanh(x)";
+                }
+
+                const xValues = [];
+                const yValues = [];
+
+                for (let x = inicio; x <= fin; x += 0.1) {
+                    xValues.push(x);
+                    yValues.push(eval(exp));
+                }
+
+                const data = [{x:xValues, y:yValues, mode:"lines"}];
+                const layout = {title: "y = " + exp};
+                Plotly.newPlot("myPlot", data, layout);
+
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <form id="myform" onsubmit="return funcTrig();">
+            <p>Inicio <input id="inicio" name="inicio" type="text"></p>
+            
+            <p>Fin <input id="fin" name="fin" type="text"></p>
+
+            <select name="funcion" id="funcion">
+                <option value="1">Seno</option>
+                <option value="2">Coseno</option>
+                <option value="3">Tangente</option>
+                <option value="4">Cotangente</option>
+            </select>
+
+            <p><input type="submit"></p>
+        </form>
+        <div id="myPlot" style="width:100%;max-width:700px"></div>
+    </body>
+</html>

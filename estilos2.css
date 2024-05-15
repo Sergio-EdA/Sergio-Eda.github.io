@@ -1,0 +1,150 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serifs;
+}
+
+body {
+    background-image: linear-gradient(315deg, #D6EAF8, #8cbbda, #EBF5FB);
+    background-size: 500%;
+    animation: fdeg 10s infinite;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+h3 {
+    font-size: 2em;
+}
+h4 {
+    font-size: 1.6em;
+}
+p {
+    font-size: 1.25em;
+}
+ul {
+    list-style: none;
+}
+li {
+    font-size: 1.25em;
+}
+
+#contenedor{
+    width: 95%;
+    background-color: white;
+    align-content: center;
+    border-radius: 15px;
+    position: relative;
+}
+
+#listaNav {
+    text-decoration-skip: true;
+}
+
+#listaNav li {
+    display:inline;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+#listaFooter li {
+    display:inline;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+table {
+    text-align: center;
+    border-spacing: 15px;
+    width: 90%;
+}
+
+th {
+    padding: 15px;
+    border-radius: 5px;
+    height: 50px;
+    width: 15%;
+}
+
+td {
+    padding: 15px;
+    border-radius: 5px;
+    height: auto;
+    width: 15%;
+}
+
+iframe {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 0px;
+}
+
+tr:nth-child(ODD) {
+    background-color: #D6EAF8;
+}
+
+tr:nth-child(even) {
+    background-color: #EBF5FB;
+}
+
+tr :hover{
+    background-color: #8cbbda;
+}
+
+footer {
+    background-color: #CCCCCC;
+}
+
+iframe {
+    border-radius: 20px;
+}
+
+footer .contenedor {
+    border-radius: 20px;
+    background-color: #e5f6ff;
+}
+
+footer h4 {
+    padding: 15px 0px;
+    margin-bottom: 30px;
+}
+
+footer a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+}
+
+footer a:hover {
+    color: #00557c;
+}
+
+#btnArriba img {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 5%;
+    height: auto;
+}
+
+@keyframes fdeg {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
