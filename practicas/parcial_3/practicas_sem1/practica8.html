@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es" data-lt-installed="true">
+    <head>
+        <title>Arreglos</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script>
+            var arreglo = [0, 0, 0, 0, 0];
+            function generadorDeArreglo() {
+                for (var i = 0; i < arreglo.length; i++) {
+                    arreglo[i] = Math.floor(Math.random() * 100) + 1;
+                }
+                imprimirArreglo();
+            }
+            function imprimirArreglo() {
+                document.getElementById("demo").innerHTML = "Arreglo Resultante: " + arreglo.join(', ');
+            }
+            function ordenarArreglo() {
+                arreglo.sort((a, b) => a - b);
+                imprimirArreglo();
+            }
+            function desordenarArreglo() {
+                arreglo.reverse();
+                imprimirArreglo();
+            }
+            function tabla() {
+                var texto = "<table><tr>";
+                for (var i = 0; i < arreglo.length; i++) {
+                    texto += "<td>" + arreglo[i] + "</td>";
+                }
+                texto += "</tr></table>";
+                document.getElementById("demo").innerHTML = texto;
+            }
+            function agregarArreglo() {
+                var elemento = Math.floor(Math.random() * 100) + 1;
+                arreglo.push(elemento);
+                imprimirArreglo();
+            }
+            function eliminaArreglo() {
+                arreglo.pop();
+                imprimirArreglo();
+            }
+        </script>
+    </head>
+    <body>
+        <div class="segundo">
+            <h1>JArreglos</h1>
+            <h2>Ordenación</h2>
+            <p>Click en la opción</p>
+            <button onclick="generadorDeArreglo()">Llenado</button>
+            <button onclick="imprimirArreglo()">Arreglo</button>
+            <button onclick="ordenarArreglo()">Ordenarlo</button> 
+            <button onclick="desordenarArreglo()">Invertido</button> 
+            <button onclick="tabla()">Poner en Tabla</button> 
+            <button onclick="agregarArreglo()">Agregar Elemento</button>  
+            <button onclick="eliminaArreglo()">Eliminar Elemento</button>  
+            <p id="demo"></p>
+        </div>
+        
+    </body>
+</html>

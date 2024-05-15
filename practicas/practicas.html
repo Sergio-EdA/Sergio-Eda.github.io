@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prácticas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+        html {
+            margin-top: 0px;
+        }
+
+        * {
+            font-family: "Raleway";
+            margin: 10px;
+        }
+
+        body {
+            background-color: #98bedd;
+            /*background-image: linear-gradient(315deg, #D6EAF8, #8cbbda, #EBF5FB);*/
+            background-size: 500%;
+            animation: fdeg 10s infinite;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 30px 0 30px 0;
+        }
+
+        #contenedor-principal {
+            background-color: #ffffff;
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0px;
+            margin: 0px;
+            border-radius: 20px;
+        }
+        
+        #titulo {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        #nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 70%;
+        }
+
+        .parciales {
+            display: grid;
+            grid-auto-rows: 20rem;
+            grid-auto-flow: dense;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .titulo-parcial {
+            background-color: #c0c0c0;
+            border-radius: 20px;
+            grid-column: span 3;
+            grid-auto-rows: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .practica {
+            height: fit-content;
+        }
+
+        h1 {
+            background: linear-gradient(90deg, #30a2ff, #72b6ee, #98bedd, #72b6ee, #30a2ff);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 100px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            background: linear-gradient(90deg, #30a2ff, #72b6ee, #98bedd, #72b6ee, #30a2ff);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 50px;
+            text-transform: uppercase;
+        }
+
+        a {
+            text-align: center;
+            font-size: 30px;
+            color: #30a2ff;
+            text-decoration: none;
+            background-color: #ffffff;
+            border-radius: 5px;
+            padding: 5px;
+            width: 125%;
+        }
+
+        a:hover {
+            text-align: center;
+            font-size: 30px;
+            color: #ffffff;
+            text-decoration: none;
+            background-color: #30a2ff;
+            border-radius: 5px;
+            padding: 5px;
+            width: 125%;
+        }
+
+        .practica a:hover {
+            text-align: center;
+            font-size: 30px;
+            color: #30a2ff;
+            text-decoration: none;
+            background-color: #ffffff;
+            border-radius: 5px;
+            padding: 5px;
+            width: 125%;
+        }
+
+        @keyframes fdeg {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor-principal">
+        <div id="titulo">
+            <h1>portafolio</h1>
+        </div>
+        <div id="nav">
+            <a href="#parcial1">Parcial 1</a>
+            <a href="#parcial2">Parcial 2</a>
+            <a href="#parcial3">Parcial 3</a>
+        </div>
+        <div id="contenido-semestre">
+            <div class="parciales" id="parcial1">
+                <div class="titulo-parcial">
+                    <h2>Parcial 1</h2>
+                </div>
+                <div class="practica">
+                    <a href="parcial_1/practicasIniciales/practica_1.html" style="text-decoration:none"><iframe src="parcial_1/practicasIniciales/practica_1.html" frameborder="0"></iframe><br><h4>Práctica 1</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_1/practicasIniciales/practica_2.html" style="text-decoration:none"><iframe src="parcial_1/practicasIniciales/practica_2.html" frameborder="0"></iframe><br><h4>Práctica 2</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_1/correccion/practica_3.html" style="text-decoration:none"><iframe src="parcial_1/correccion/practica_3.html" frameborder="0"></iframe><br><h4>Práctica 3</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_1/correccion/practica_4.html" style="text-decoration:none"><iframe src="parcial_1/correccion/practica_4.html" frameborder="0"></iframe><br><h4>Práctica 4</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_1/retos/practica_5.html" style="text-decoration:none"><iframe src="parcial_1/retos/practica_5.html" frameborder="0"></iframe><br><h4>Práctica 5</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_1/retos/practica_6.html" style="text-decoration:none"><iframe src="parcial_1/retos/practica_6.html" frameborder="0"></iframe><br><h4>Práctica 6</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_1/retos/reto_1.html" style="text-decoration:none"><iframe src="parcial_1/retos/reto_1.html" frameborder="0"></iframe><br><h4>Reto 1</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_1/practicasSN/practica_7.html" style="text-decoration:none"><iframe src="parcial_1/practicasSN/practica_7.html" frameborder="0"></iframe><br><h4>Práctica 7</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_1/practicasSN/iframe.html" style="text-decoration:none"><iframe src="parcial_1/practicasSN/iframe.html" frameborder="0"></iframe><br><h4>Iframe</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_1/practicasSN/reproductor/reproductor.html" style="text-decoration:none"><iframe src="parcial_1/practicasSN/reproductor/reproductor.html" frameborder="0"></iframe><br><h4>Reproductor</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_1/practicasSN/formulario_tutorias.html" style="text-decoration:none"><iframe src="parcial_1/practicasSN/formulario_tutorias.html" frameborder="0"></iframe><br><h4>Formulario</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_1/practicasSN/sistemaSolar/paginas/sistema_solar.html" style="text-decoration:none"><iframe src="parcial_1/practicasSN/sistemaSolar/paginas/sistema_solar.html" frameborder="0"></iframe><br><h4>Sistema solar</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_1/practicasSN/examenPractico/razas.html" style="text-decoration:none"><iframe src="parcial_1/practicasSN/examenPractico/razas.html" frameborder="0"></iframe><br><h4>Examen práctico</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="https://sites.google.com/view/21pseda/inicio" style="text-decoration:none"><iframe src="https://sites.google.com/view/21pseda/inicio" frameborder="0"></iframe><br><h4>Google Sites</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="https://21pseda.my.canva.site/" style="text-decoration:none"><iframe src="https://21pseda.my.canva.site/" frameborder="0"></iframe><br><h4>Canva</h4></a>
+                </div>
+            </div>
+
+            <div class="parciales" id="parcial2">
+                <div class="titulo-parcial">
+                    <h2>Parcial 2</h2>
+                </div>
+                <div class="practica">
+                    <a href="parcial_2/practica_1/practica_1.html" style="text-decoration:none"><iframe src="parcial_2/practica_1/practica_1.html" frameborder="0"></iframe><br><h4>Práctica 1</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_2/reto_1/reto_1.html" style="text-decoration:none"><iframe src="parcial_2/reto_1/reto_1.html" frameborder="0"></iframe><br><h4>Reto 1</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_2/reto_2/reto2.html" style="text-decoration:none"><iframe src="parcial_2/reto_2/reto2.html" frameborder="0"></iframe><br><h4>Reto 2</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_2/reto_3/horario.html" style="text-decoration:none"><iframe src="parcial_2/reto_3/horario.html" frameborder="0"></iframe><br><h4>Reto 3</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_2/ej_clase_1/ej_clase_1.html" style="text-decoration:none"><iframe src="parcial_2/ej_clase_1/ej_clase_1.html" frameborder="0"></iframe><br><h4>Ejercicio 1</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_2/ej_clase_2/ej_clase_2.html" style="text-decoration:none"><iframe src="parcial_2/ej_clase_2/ej_clase_2.html" frameborder="0"></iframe><br><h4>Ejercicio 2</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_2/tarea1_fuentes/san_luis_potosi.html" style="text-decoration:none"><iframe src="parcial_2/tarea1_fuentes/san_luis_potosi.html" frameborder="0"></iframe><br><h4>Ejercicio 1</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_2/estilos_av_1/practica1.html" style="text-decoration:none"><iframe src="parcial_2/estilos_av_1/practica1.html" frameborder="0"></iframe><br><h4>Práctica 1</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_2/estilos_av_2/practica2.html" style="text-decoration:none"><iframe src="parcial_2/estilos_av_2/practica2.html" frameborder="0"></iframe><br><h4>Práctica 2</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_2/estilos_av_3/practica3.html" style="text-decoration:none"><iframe src="parcial_2/estilos_av_3/practica3.html" frameborder="0"></iframe><br><h4>Práctica 3</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_2/div_canciones/div_canciones.html" style="text-decoration:none"><iframe src="parcial_2/div_canciones/div_canciones.html" frameborder="0"></iframe><br><h4>Canciones</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_2/practica_12/practica_12.html" style="text-decoration:none"><iframe src="parcial_2/practica_12/practica_12.html" frameborder="0"></iframe><br><h4>Práctica 12</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_2/practica_13/practica_13.html" style="text-decoration:none"><iframe src="parcial_2/practica_13/practica_13.html" frameborder="0"></iframe><br><h4>Práctica 12</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_2/est_reto_1/reto1.html" style="text-decoration:none"><iframe src="parcial_2/est_reto_1/reto1.html" frameborder="0"></iframe><br><h4>Reto 1</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_2/citas/citas.html" style="text-decoration:none"><iframe src="parcial_2/citas/citas.html" frameborder="0"></iframe><br><h4>Citas</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_2/museos/museos.html" style="text-decoration:none"><iframe src="parcial_2/museos/museos.html" frameborder="0"></iframe><br><h4>Museos</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_2/revistas_informatica/revistas.html" style="text-decoration:none"><iframe src="parcial_2/revistas_informatica/revistas.html" frameborder="0"></iframe><br><h4>Revistas informatica</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_2/animacion/animacion.html" style="text-decoration:none"><iframe src="parcial_2/animacion/animacion.html" frameborder="0"></iframe><br><h4>Animacion</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_2/animacion2/animacion2.html" style="text-decoration:none"><iframe src="parcial_2/animacion2/animacion2.html" frameborder="0"></iframe><br><h4>Animacion 2</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_2/transformar/transformar.html" style="text-decoration:none"><iframe src="parcial_2/transformar/transformar.html" frameborder="0"></iframe><br><h4>Transformacion</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_2/transformar2/transformar2.html" style="text-decoration:none"><iframe src="parcial_2/transformar2/transformar2.html" frameborder="0"></iframe><br><h4>Transformacion 2</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_2/anim_extra/sist_solar.html" style="text-decoration:none"><iframe src="parcial_2/anim_extra/sist_solar.html" frameborder="0"></iframe><br><h4>Animacion extra</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_2/menu/menu_hover.html" style="text-decoration:none"><iframe src="parcial_2/menu/menu_hover.html" frameborder="0"></iframe><br><h4>Menu Hover</h4></a>
+                </div>
+                <div class="practica">
+                    <a href="parcial_2/examen/examen.html" style="text-decoration:none"><iframe src="parcial_2/examen/examen.html" frameborder="0"></iframe><br><h4>Examen práctico</h4></a>
+                </div>
+            </div>
+
+            <div class="parciales" id="parcial3">
+                <div class="titulo-parcial">
+                    <h2>Parcial 3</h2>
+                </div>
+                <div class="practica">
+                    <a href="parcial_3/menu/menu.html" style="text-decoration:none"><iframe src="parcial_3/menu/menu.html" frameborder="0"></iframe><br><h4>Menu</h4></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

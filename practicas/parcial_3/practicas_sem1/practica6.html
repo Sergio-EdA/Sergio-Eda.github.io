@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" data-lt-installed="true">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ingresar a portafolio</title>
+        <script type="text/javascript">
+            function validar(){
+                var usuario= document.forms[0].usuario.value;
+                var Password= document.forms[0].pass.value;
+                if((usuario=="admin")&&(Password=="1234")){
+                    document.write("Acceso Permitido <br>");
+                    document.write("<a href=https://sedatib.000webhostapp.com/index.html>ir a portafolio</a>");
+                }
+                else{
+                    document.write("Acceso Denegado <br>");
+                }
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <form id="myform" onsubmit="return validar();">
+            <p>usuario <input id="usuario" name="usuario" type="text"></p>
+            <p>Password <input id="pass" name="pass" type="password"></p>
+            <p><input type="submit"></p>    
+        </form>
+    </body>
+</html>
