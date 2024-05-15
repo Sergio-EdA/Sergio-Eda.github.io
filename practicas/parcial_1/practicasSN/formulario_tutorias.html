@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario de tutorías</title>
+    </head>
+    <body>
+        <form action="mailto:liliana.gamez@upslp.edu.mx" method="post">
+            <p>
+                Nombre:
+                <input type="text" name="nombre" size="100">
+                Matrícula
+                <input type="number" name="matricula" min="180000"><br>
+            </p>
+            <p>
+                Semestre:
+                <input type="radio" name="semestre" value="1">1
+                <input type="radio" name="semestre" value="2">2
+                <input type="radio" name="semestre" value="3">3
+                <input type="radio" name="semestre" value="4">4
+                <input type="radio" name="semestre" value="5">5
+                <input type="radio" name="semestre" value="6">6
+                <input type="radio" name="semestre" value="7">7
+                <input type="radio" name="semestre" value="8">8
+                <input type="radio" name="semestre" value="9">9
+                <input type="radio" name="semestre" value="9+">9+<br>
+            </p>
+            <p>
+                Fecha:
+                <input type="date" name="fecha"><br>
+            </p>
+            <p>
+                Materia 1:
+                <input type="text" name="mat1" size="50"><br>
+                Materia 2:
+                <input type="text" name="mat2" size="50"><br>
+                Materia 3:
+                <input type="text" name="mat3" size="50"><br>
+                Materia 4:
+                <input type="text" name="mat4" size="50"><br>
+                Materia 5:
+                <input type="text" name="mat5" size="50"><br>
+                Materia 6:
+                <input type="text" name="mat6" size="50"><br>
+                Materia 7:
+                <input type="text" name="mat7" size="50"><br>
+            </p>
+            <p>
+                Calificación Materia 1:
+                <input type="text" name="Cmat1" size="50" step="0.1"><br>
+                Calificación Materia 2:
+                <input type="text" name="Cmat2" size="50" step="0.1"><br>
+                Calificación Materia 3:
+                <input type="text" name="Cmat3" size="50" step="0.1"><br>
+                Calificación Materia 4:
+                <input type="text" name="Cmat4" size="50" step="0.1"><br>
+                Calificación Materia 5:
+                <input type="text" name="Cmat5" size="50" step="0.1"><br>
+                Calificación Materia 6:
+                <input type="text" name="Cmat6" size="50" step="0.1"><br>
+                Calificación Materia 7:
+                <input type="text" name="Cmat7" size="50" step="0.1"><br>
+            </p>
+            <p>
+                Escribe las razones por las que no pasaste las materias anteriores si es que no lo hiciste
+                <textarea name="razon" cols="20" rows="20" placeholder="Aquí tu comentario"></textarea>
+            </p>
+            <p>
+                Cómo consideras tu rendimiento del anterior semestre?
+                <select name="rend">
+                    <option></option>
+                    <option value="Excelente">Excelente</option>
+                    <option value="Bueno">Bueno</option>
+                    <option value="Regular">Regular</option>
+                    <option value="Malo">Malo</option>
+                </select>
+            </p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </form>
+    </body>
+</html>

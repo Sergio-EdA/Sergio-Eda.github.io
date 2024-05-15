@@ -1,0 +1,109 @@
+#contenedor{
+    width: 70%;
+    background-color: white;
+    align-content: center;
+    border-radius: 30px;
+}
+
+#listaNav {
+    text-decoration-skip: true;
+}
+
+#listaNav li {
+    display:inline;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+#listaFooter li {
+    display:inline;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+tr:nth-child(ODD) {
+    background-color: #d7fcff;
+}
+
+tr:nth-child(even) {
+    background-color: #EEFBFC;
+}
+
+tr :hover{
+    background-color: #B2E6FF;
+}
+
+footer {
+    background-color: #CCCCCC;
+}
+
+.imgGatos {
+    border-radius: 20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgb(154, 178, 230);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+}
+
+table {
+    border-radius: 7px;
+    border-width: 5px;
+    border-color: steelblue;
+    background-color: rgb(149, 183, 245);
+    align-content: center;
+    vertical-align: middle;
+}
+
+td {
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: steelblue;
+}
+
+.conttext{
+    width: 90%;
+}
+
+button{
+    color: rgb(0, 0, 0);
+    background-color: rgb(149, 183, 245);
+    font-weight: bolder;
+    vertical-align: middle;
+}
+
+body{
+    background-color: #00A4BD;
+}
