@@ -1,0 +1,84 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 2px;
+    padding: 2px;
+}
+
+body {
+    position: relative;
+    align-content: center;
+    background-color: #000000;
+}
+
+#contenedor {
+    width: 70%;
+    height: 90vb;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+}
+
+table {
+    text-align: center;
+    border-color: #000000;
+    border-width: 4px;
+    border-radius: 2px;
+    border-style: solid;
+}
+
+th {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    height: 35px;
+    border-style: solid;
+    font-size: larger;
+}
+
+td {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    border-style: solid;
+    height: 30px;
+}
+
+.hora {
+    width: 25%;
+    background-color: #dbdbdbd1;
+}
+
+.dia {
+    width: 15%;
+    background-color: #dbdbdbd1;
+}
+
+.ingles {
+    background-color: #67aeff;
+}
+
+.progra {
+    background-color: #6ba9f1;
+}
+
+.fisica {
+    background-color: #70a6e2;
+}
+
+.mate {
+    background-color: #76a3d7;
+}
+
+.prograWeb {
+    background-color: #779ecb;
+}
+
+.nucleo {
+    background-color: #789ac1;
+}
+
+.labo {
+    background-color: #7c98b8;
+}

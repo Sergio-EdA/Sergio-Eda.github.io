@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>San Luis Potosí</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anta&family=Ojuju:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anta&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Ojuju:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <style>
+            .ojuju {
+                font-family: "Ojuju", sans-serif;
+            }
+
+            .anta-regular {
+                font-family: "Anta", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .josefin-sans {
+                font-family: "Josefin Sans", sans-serif;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                padding: 0;
+                background-color: #000000;
+            }
+
+            header {
+                display: flex;
+                background-color: #ffffff;
+                border-radius: 5px;
+                margin: 0 auto;
+                width: 90%;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            nav li {
+                display: inline;
+                vertical-align: middle;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+
+            nav a {
+                text-decoration: none;
+                vertical-align: middle;
+            }
+
+            h1, h2 {
+                color: #333;
+                font-family: "Roboto";
+                text-align: center;
+            }
+            
+            h1 {
+                font-size: 40px;
+                text-align: center;
+                margin: auto;
+                font-family: "Ojuju", sans-serif;
+            }
+
+            h2 {
+                font-size: 35px;
+                text-align: center;
+                margin: 0 auto;
+                padding: 10px;
+                background-color: #ddd;
+                border-radius: 5px;
+                margin-left: 10px;
+                margin-right: 10px;
+                font-family: "Anta", sans-serif;
+            }
+
+            h3 {
+                font-size: 25px;
+                text-align: center;
+                margin: 0 auto;
+                padding: 10px;
+                background-color: #ddd;
+                border-radius: 5px;
+                margin-left: 100px;
+                margin-right: 100px;
+                font-family: "Josefin Sans", sans-serif;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            #cont {
+                width: 80%;
+                margin: 0 auto;
+                background-color: #ffffff;
+                padding: 20px;
+                border-radius: 5px;
+            }
+
+            .contt {
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .text {
+                padding: 30px;
+                padding-top: 0px;
+            }
+
+            .contt .text img {
+                margin: 0 auto;
+            }
+
+            div.gallery {
+                margin: 5px;
+                border: 3px solid #cccccc;
+                border-radius: 3px;
+                float: left;
+                width: 180px;
+                height: 200px;
+            }
+            
+            div.gallery:hover {
+                border: 3px solid #777777;
+                border-radius: 3px;
+            }
+            
+            div.gallery img {
+                width: 100%;
+                height: auto;
+            }
+
+            div.desc {
+                padding: 15px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body link="#000000" vlink="#000000">
+        <header>
+                <h1 id="slp">San Luis Potosí</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#historia">Historia</a></li>
+                        <li><a href="#zonas">Zonas Principales</a></li>
+                        <li><a href="#gastronomia">Gastronomía</a></li>
+                        <li><a href="#economia">Economía</a></li>
+                        <li><a href="#barrios">Barrios</a></li>
+                    </ul>
+                </nav>
+            
+        </header>
+
+        <br><br>
+        
+        <div id="cont">
+            <section id="historia">
+                <h2>Historia</h2>
+                
+                <div class="contt">
+                    <div class="text">
+                        <p>
+                            San Luis Potosí, ubicado en el corazón de México, tiene una historia rica y fascinante que se remonta a milenios atrás. Antes de la llegada de los españoles, la región estaba habitada por diversos grupos indígenas, entre los que destacaban los huastecos, los guachichiles y los pames. Estos pueblos desarrollaron sociedades complejas, con sistemas de agricultura, comercio y organización política propios.
+                        </p>
+                        <p>
+                            La llegada de los conquistadores españoles en el siglo XVI marcó un punto de inflexión en la historia de la región. En 1592, se fundó la ciudad de San Luis Potosí, que pronto se convirtió en un importante centro colonial. La ciudad debe su nombre a San Luis, rey de Francia, y al abundante yacimiento de plata descubierto en la zona. La minería de la plata se convirtió en la principal actividad económica de la región durante los siglos siguientes, atrayendo a colonos, aventureros y comerciantes de todo el mundo.
+                        </p>
+                        <p>
+                            Durante el período colonial, San Luis Potosí fue testigo de importantes acontecimientos históricos. En el siglo XIX, la región desempeñó un papel crucial en la lucha por la independencia de México. Figuras como Miguel Hidalgo y José María Morelos encontraron refugio y apoyo entre la población de San Luis Potosí, y la ciudad se convirtió en un bastión de la resistencia contra el dominio español. Finalmente, en 1821, México logró su independencia, y San Luis Potosí se convirtió en parte de la República Mexicana.
+                        </p>
+                        <p>
+                            En los siglos posteriores, San Luis Potosí experimentó un rápido crecimiento y desarrollo. La construcción de ferrocarriles, la expansión de la industria minera y la llegada de inmigrantes europeos y asiáticos contribuyeron a la transformación económica y cultural de la región. Durante la Revolución Mexicana, San Luis Potosí fue escenario de importantes batallas y movimientos sociales, que dejaron una profunda huella en la historia y la identidad de la región.
+                        </p>
+                    </div>
+                    
+                    <div class="text" id="so">
+                        <p>
+                            Hoy en día, San Luis Potosí es una ciudad próspera y vibrante, que combina su rica herencia histórica con una moderna infraestructura y una activa vida cultural. Los vestigios de su pasado colonial, como el impresionante centro histórico y las antiguas minas de plata, conviven con modernos edificios, parques y museos que reflejan la diversidad y el dinamismo de la región. Sin duda, la historia de San Luis Potosí es un testimonio vivo del pasado y el presente de México.
+                        </p>
+                        <img src="imagenes/sl1.JPG" alt="Catedral San Luis Potosí" width="100%">
+                    </div>
+                </div>
+            </section>
+
+            <section id="zonas">
+                <h2>Sitios turísticos</h2>
+                <div class="contt">
+                    <div class="text">
+                        <p>
+                            San Luis Potosí es un destino turístico lleno de maravillas naturales, arquitectónicas e históricas que cautivan a visitantes de todo el mundo. Desde imponentes paisajes montañosos hasta encantadores pueblos coloniales, la región ofrece una amplia variedad de lugares para explorar y disfrutar.
+                        </p>
+                        <p>
+                            El Centro Histórico de San Luis Potosí es un lugar imperdible para los amantes de la arquitectura colonial. Sus calles empedradas, plazas ajardinadas y majestuosos edificios históricos, como la Catedral Metropolitana y el Palacio de Gobierno, transportan a los visitantes a otra época. El Jardín Hidalgo, con su hermosa fuente y sus bancos sombreados, es el lugar perfecto para relajarse y disfrutar del ambiente tranquilo de la ciudad.
+                        </p>
+                        <p>
+                            Otro destino popular es Real de Catorce, un pueblo mágico situado en la Sierra de Catorce. Con sus calles empedradas, casas coloniales y vistas panorámicas espectaculares, Real de Catorce es como un viaje en el tiempo. Los visitantes pueden explorar antiguas minas de plata, visitar la Iglesia de San Francisco de Asís y disfrutar de la atmósfera bohemia y artística del pueblo.
+                        </p>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Xilitla y Las Pozas son otro tesoro escondido de San Luis Potosí. Ubicado en la Huasteca Potosina, este paraíso tropical es famoso por sus exuberantes jardines y esculturas surrealistas creadas por el artista británico Edward James. Los visitantes pueden recorrer senderos naturales, nadar en cascadas cristalinas y maravillarse con las extrañas estructuras de concreto que salpican el paisaje.
+        
+                        </p>
+                        <p>
+                            La Huasteca Potosina es una región de belleza natural incomparable, con ríos turquesa, cascadas impresionantes y cuevas misteriosas. Lugares como la Cascada Tamul, la Cascada de Tamasopo y las Grutas de la Catedral son destinos populares para practicar senderismo, rappel y espeleología. Los visitantes también pueden disfrutar de actividades acuáticas como el rafting, el kayak y la natación en los numerosos ríos y pozas de la región.
+                        </p>
+                        <p>
+                            La Sierra de Álvarez es otro destino destacado, con sus bosques de pinos, cascadas y pintorescos pueblos de montaña. Lugares como el Parque Nacional Sierra de Álvarez, el pueblo de Santa María del Río y la Cascada de Tamul son perfectos para los amantes de la naturaleza y la aventura.
+                        </p>
+                    </div>
+                </div>
+                <div class="contt">
+                    <div class="text">
+                        <p>
+                            Estos son solo algunos de los muchos sitios turísticos que San Luis Potosí tiene para ofrecer. Ya sea explorando antiguas ciudades coloniales, nadando en aguas cristalinas o admirando paisajes de montaña, los visitantes encontrarán algo que los cautivará en cada rincón de esta fascinante región.
+                        </p>
+                    </div>
+                    
+                </div>
+                
+                <h3>Zonas principales</h3><br>
+
+                <div class="contt">
+                    <div class="text">
+                        <ul>
+                            <li>Centro Histórico de San Luis Potosí</li>
+                            <li>Real de Catorce</li>
+                            <li>Xilitla y Las Pozas</li>
+                            <li>Huasteca Potosina</li>
+                            <li>Sierra de Álvarez</li>
+                            <li>Valles y Ciénegas</li>
+                        </ul>
+                    </div>
+                    <div class="text">
+                        <table>
+                            <tr>
+                                <th>Lugar</th>
+                                <th>Descripción</th>
+                            </tr>
+                            <tr>
+                                <td>Centro Histórico de San Luis Potosí</td>
+                                <td>El corazón histórico y cultural de la ciudad, con hermosa arquitectura colonial.</td>
+                            </tr>
+                            <tr>
+                                <td>Real de Catorce</td>
+                                <td>Un pueblo mágico famoso por su historia minera y sus paisajes desérticos.</td>
+                            </tr>
+                            <tr>
+                                <td>Xilitla y Las Pozas</td>
+                                <td>Un paraíso surrealista con jardines y esculturas creadas por el artista Edward James.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="gastronomia">
+                <h2>Gastronomía</h2>
+                <div class="contt">
+                    <div class="text">
+                        <p>
+                            La gastronomía de San Luis Potosí es una deliciosa fusión de sabores y tradiciones que refleja la rica diversidad cultural de la región. Con influencias indígenas, españolas y mestizas, los platillos potosinos son una experiencia gastronómica única que deleita los sentidos y satisface el paladar.
+                        </p>
+                        <p>
+                            Uno de los platillos más emblemáticos de la región es el zacahuil, un tamal gigante relleno de carne de cerdo o pollo, envuelto en hojas de plátano y cocido lentamente en un horno de leña. Este manjar es una verdadera obra maestra culinaria, que requiere horas de preparación y cuidado para lograr su sabor y textura característicos.
+                        </p>
+                        <p>
+                            Las enchiladas potosinas son otro plato popular, que consiste en tortillas de maíz rellenas de pollo, queso o picadillo, bañadas en una salsa roja y acompañadas de lechuga, crema y queso fresco. Estas enchiladas tienen un sabor único y delicioso, que se complementa perfectamente con los sabores frescos y picantes de la salsa y los acompañamientos.
+                        </p>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Otro platillo imperdible es el queso potosino, un queso fresco y suave hecho con leche de vaca, que se utiliza en una variedad de recetas tradicionales, como las gorditas de migajas y los tacos potosinos. Las gorditas de migajas son masa de maíz rellena de migajas de chicharrón, que se fríen hasta que estén doradas y crujientes. Estas delicias son perfectas para disfrutar como aperitivo o como plato principal, acompañadas de salsa y guarniciones frescas.        
+                        </p>
+                        <p>
+                            Los tacos potosinos son otra especialidad de la región, que consiste en tortillas de maíz rellenas de guisos como picadillo, deshebrada o nopales, que se sirven con salsa, cebolla y cilantro. Estos tacos son una opción popular para el almuerzo o la cena, y se pueden encontrar en mercados, fondas y restaurantes de todo San Luis Potosí.
+                        </p>
+                        <p>
+                            Además de estos platillos principales, la gastronomía de San Luis Potosí cuenta con una amplia variedad de antojitos, postres y bebidas tradicionales que deleitan a los visitantes y locales por igual. Desde tamales y tlacoyos hasta dulces de leche y nieves de sabores exóticos, hay algo para todos los gustos en la cocina potosina.                        </p>
+                    </div>
+                </div>
+                <div class="contt">
+                    <div class="text">
+                        <img src="imagenes/sl2.jpg" alt="Enchiladas Potosinas">
+                    </div>
+                </div>
+                
+                <h3>Platillos Típicos</h3><br>
+
+                <div class="contt">
+                    <div class="text">
+                        <ul>
+                            <li><strong>Zacahuil:</strong> Tamal gigante relleno de carne y envuelto en hojas de plátano.</li>
+                            <li><strong>Enchiladas Potosinas:</strong> Tortillas bañadas en salsa roja y rellenas de pollo, queso o picadillo.</li>
+                            <li><strong>Gorditas de migajas:</strong> Masa de maíz rellena de migajas de chicharrón.</li>
+                            <li><strong>Tacos potosinos:</strong> Tortillas de maíz rellenas de guisos como picadillo o deshebrada.</li>
+                        </ul>
+                    </div>
+                    <div class="text">
+                        <table>
+                            <tr>
+                                <th>Platillo</th>
+                                <th>Descripción</th>
+                            </tr>
+                            <tr>
+                                <td>Zacahuil</td>
+                                <td>Tamal gigante relleno de carne y envuelto en hojas de plátano.</td>
+                            </tr>
+                            <tr>
+                                <td>Enchiladas Potosinas</td>
+                                <td>Tortillas bañadas en salsa roja y rellenas de pollo, queso o picadillo.</td>
+                            </tr>
+                            <tr>
+                                <td>Gorditas de migajas</td>
+                                <td>Masa de maíz rellena de migajas de chicharrón.</td>
+                            </tr>
+                            <tr>
+                                <td>Tacos potosinos</td>
+                                <td>Tortillas de maíz rellenas de guisos como picadillo o deshebrada.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="economia">
+                <h2>Economía</h2>
+                <div class="contt">
+                    <div class="text">
+                        <p>La economía de San Luis Potosí se basa en varios sectores:</p>
+                        <ul>
+                            <li><strong>Industria Automotriz:</strong> La presencia de empresas automotrices como General Motors, BMW y Ford ha impulsado el desarrollo económico de la región.</li>
+                            <li><strong>Minería:</strong> Aunque la minería de plata ya no es tan prominente como en el pasado, aún existen yacimientos minerales en la región.</li>
+                            <li><strong>Agricultura:</strong> Se cultiva una variedad de productos agrícolas, incluyendo maíz, frijol, caña de azúcar y cítricos.</li>
+                            <li><strong>Turismo:</strong> San Luis Potosí cuenta con una gran variedad de destinos turísticos, desde pueblos mágicos hasta paisajes naturales impresionantes.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contt">
+                    <div class="text">
+                        <p>
+                            La economía de San Luis Potosí es diversa y dinámica, con varios sectores que contribuyen al desarrollo y crecimiento de la región. Uno de los sectores más importantes es la industria automotriz, que ha experimentado un rápido crecimiento en los últimos años. La presencia de empresas como General Motors, BMW y Ford ha convertido a San Luis Potosí en un importante centro de producción de vehículos y autopartes, atrayendo inversiones y generando empleo en la región.
+                        </p>
+                        <p>
+                            Otro sector clave es la minería, que ha sido históricamente una parte integral de la economía de San Luis Potosí. Aunque la minería de plata ya no es tan prominente como en el pasado, aún existen yacimientos minerales en la región, incluyendo oro, zinc, plomo y cobre. La explotación minera sigue siendo una actividad importante en algunas áreas rurales de la región, proporcionando empleo e ingresos a comunidades locales.
+                        </p>
+                    </div>
+                    <div class="text">
+                        <p>
+                            La agricultura también juega un papel importante en la economía de San Luis Potosí, con la producción de una variedad de cultivos como maíz, frijol, caña de azúcar, cítricos y aguacate. La región cuenta con tierras fértiles y un clima favorable que permiten el cultivo de una amplia gama de productos agrícolas, tanto para consumo local como para exportación.
+                        </p>
+                        <p>
+                            El turismo es otro sector en crecimiento en San Luis Potosí, gracias a sus impresionantes paisajes naturales, su rica historia y su vibrante cultura. Destinos como el Centro Histórico de San Luis Potosí, Real de Catorce, Xilitla y Las Pozas, y la Huasteca Potosina atraen a miles de visitantes cada año, generando ingresos para la industria turística y contribuyendo al desarrollo económico de la región.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="barrios">
+                <h2>Barrios</h2>
+                <div class="contt">
+                    <div class="text">
+                        <div class="gallery">
+                            <a href="barrios/tlaxcala.html"><img src="imagenes/barrTlaxcala.png" alt="Barrio de Tlaxcala" width="600" height="400"><div class="desc">Barrio de Tlaxcala</div></a>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <div class="gallery">
+                            <a href="barrios/sanMiguelito.html"><img src="imagenes/barrSanMig.png" alt="Barrio de San Miguelito" width="600" height="400"><div class="desc">Barrio de San Miguelito</div></a>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <div class="gallery">
+                            <a href="barrios/montecillo.html"><img src="imagenes/barrMont.png" alt="Barrio de Montecillo" width="600" height="400"><div class="desc">Barrio de Montecillo</div></a>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <div class="gallery">
+                            <a href="barrios/sanJuan.html"><img src="imagenes/barrSanJuan.png" alt="Barrio de San Juan" width="600" height="400"><div class="desc">Barrio de San Juan</div></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contt">
+                    <div class="text">
+                        <div class="gallery">
+                            <a href="barrios/sanSebastian.html"><img src="imagenes/barrSanSeb.png" alt="Barrio de San Sebastian" width="600" height="400"><div class="desc">Barrio de San Sebastian</div></a>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <div class="gallery">
+                            <a href="barrios/santiago.html"><img src="imagenes/barrSant.png" alt="Barrio de Santiago" width="600" height="400"><div class="desc">Barrio de Santiago</div></a>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <div class="gallery">
+                            <a href="barrios/tequis.html"><img src="imagenes/barrTequ.png" alt="Barrio de Tequis" width="600" height="400"><div class="desc">Barrio de Tequis</div></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3>Zonas principales</h3><br>
+
+                <div class="contt">
+                    <div class="text">
+                        <ul>
+                            <li>Centro Histórico de San Luis Potosí</li>
+                            <li>Real de Catorce</li>
+                            <li>Xilitla y Las Pozas</li>
+                            <li>Huasteca Potosina</li>
+                            <li>Sierra de Álvarez</li>
+                            <li>Valles y Ciénegas</li>
+                        </ul>
+                    </div>
+                    <div class="text">
+                        <table>
+                            <tr>
+                                <th>Lugar</th>
+                                <th>Descripción</th>
+                            </tr>
+                            <tr>
+                                <td>Centro Histórico de San Luis Potosí</td>
+                                <td>El corazón histórico y cultural de la ciudad, con hermosa arquitectura colonial.</td>
+                            </tr>
+                            <tr>
+                                <td>Real de Catorce</td>
+                                <td>Un pueblo mágico famoso por su historia minera y sus paisajes desérticos.</td>
+                            </tr>
+                            <tr>
+                                <td>Xilitla y Las Pozas</td>
+                                <td>Un paraíso surrealista con jardines y esculturas creadas por el artista Edward James.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

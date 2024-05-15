@@ -1,0 +1,21 @@
+* {
+	font-family: 'Poppins';
+}
+
+body {
+	background-color: #DAEFFF;
+}
+
+h1 {
+	font-weight: bold;
+	color: #003C9B;
+}
+
+h2 {
+	font-weight: bold;
+	color: #436CAD;
+}
+
+p {
+	color: #3A70C7; 
+}
