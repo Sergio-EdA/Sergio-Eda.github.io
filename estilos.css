@@ -1,0 +1,391 @@
+/*Configuraciones generales de la página*/
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serifs;
+}
+
+body {
+    background-image: linear-gradient(315deg, #D6EAF8, #8cbbda, #EBF5FB);
+    background-size: 500%;
+    animation: fdeg 10s infinite;
+}
+
+#contenedor{
+    width: 95%;
+    background-color: white;
+    align-content: center;
+    border-radius: 20px;
+    position: relative;
+}
+
+
+/*Configuración del contenedor HEADER*/
+header .contDivs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+header #titulo {
+    color: white;
+    background-color: black;
+    padding: 5px;
+    padding-top: 0px;
+    border-radius: 5px;
+    text-align: center;
+    height: 35px;
+    font-size: 30px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:  25px;
+}
+
+header a {
+    padding:  12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: #f0f0f0;
+}
+
+
+/*Configuración del contenido de los contenedores tipo HERO*/
+button {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 5px 30px;
+    border-radius: 15px;
+    border: #ffffff;
+    color: #000000;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #a6afb4;
+    border: #a6afb4;
+    color: #ffffff;
+}
+
+#portafolio{
+    font-family: BankFuturistic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 55vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    )
+    ,url("imgIndex/imagenPortafolio.jpg");
+    background-size: cover;
+    color: #ffffff;
+}
+
+.textGran {
+    color: #ffffff;
+    font-size: 3.5em;
+}
+
+.textPequ {
+    color:#ffffff;
+    font-size: 1em;
+}
+
+/*Configuración del tamaño de los textos*/
+h2 {
+    font-size: 2.7em;
+}
+h3 {
+    font-size: 2em;
+}
+h4 {
+    font-size: 1.6em;
+}
+p {
+    font-size: 1.25em;
+}
+ul {
+    list-style: none;
+}
+li {
+    font-size: 1.25em;
+}
+
+
+#yo {
+    text-align: center;
+    padding: 150px 15px;
+}
+
+#proWeb {
+    color: white;
+    background-color: black;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 0px;
+    height: 5px;
+    border-radius: 2px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+#practicas {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    text-align: center;
+}
+
+#practicas .contenedor {
+    text-align: center;
+    padding: 150px 0px;
+}
+
+#practicas p {
+    display: none;
+}
+
+#practicas .parciales {
+    background-position: center center;
+    background-size: cover;
+    padding: 50;
+    margin: 12px 20px;
+    border-radius: 30px;
+}
+
+#practicas h2 {
+    margin-top: 0px;
+    font-size: 3em;
+}
+
+#practicas {
+    vertical-align: middle;
+    align-items: center;
+}
+
+.parciales:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imgIndex/imgHTML.jpg");
+}
+
+.parciales:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imgIndex/imgCSS.jpg");
+}
+
+.parciales:nth-child(4) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imgIndex/imgJS.jpg");
+}
+
+#tiberius{
+    font-family: BankFuturistic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 50vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    )
+    ,url("imgIndex/tiberius.jpg");
+    background-size: cover;
+    color: #ffffff;
+}
+
+#twentyOnePilots{
+    font-family: BankFuturistic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 75vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    )
+    ,url("imgIndex/twentyOnePilots.jpg");
+    background-size: cover;
+    color: #ffffff;
+}
+
+
+
+footer .contenedor {
+    border-radius: 20px;
+    background-color: #e5f6ff;
+}
+
+footer h4 {
+    padding: 15px 0px;
+    margin-bottom: 30px;
+}
+
+footer a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+}
+
+footer a:hover {
+    color: #00557c;
+}
+
+/*Configuración de imágenes*/
+#imgIni {
+    margin: 0px;
+    padding: 0px;
+    filter: brightness(0%);
+    transition: filter 0.3s ease;
+}
+
+#imgIni:hover {
+    filter: hue-rotate(180deg);
+    filter: brightness(500%);
+}
+
+
+/*Botón para ir arriba de la página*/
+#btnArriba img {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 5%;
+    height: auto;
+}
+
+
+/*Animación del fondo degradado*/
+@keyframes fdeg {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/*Configuración para escritorio*/
+@media (min-width: 100px) {
+    header .contDivs {
+        top: 0px;
+        left: 0px;
+        display: flex;
+        position: fixed;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    header nav {
+        align-content: center;
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 0;
+        justify-content: center;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    #yo .contDivs {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #yo #texto {
+        width: 50%;
+        text-align: initial;
+        padding-left: 30px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #yo .contImgs {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.3)
+        )
+        ,url("imgIndex/amigos.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 450px;
+        width: 400px;
+    }
+
+    #yo h2 {
+        margin: 0px;
+    }
+
+    #practicas .contDivs {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    #practicas h3 {
+        margin-top: 20px;
+    }
+
+    #practicas p {
+        display:block;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .parciales {
+        width: 25%;
+    }
+}
