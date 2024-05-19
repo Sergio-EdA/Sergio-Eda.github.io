@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prácticas</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
 
         html {
             margin-top: 0px;
@@ -18,19 +18,19 @@
 
         body {
             background-color: #98bedd;
-            /*background-image: linear-gradient(315deg, #D6EAF8, #8cbbda, #EBF5FB);*/
             background-size: 500%;
             animation: fdeg 10s infinite;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
-            margin: 30px 0 30px 0;
+            margin: 30px 0;
         }
 
         #contenedor-principal {
             background-color: #ffffff;
-            width: 75%;
+            width: 90%;
+            max-width: 1200px;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -50,32 +50,49 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            width: 70%;
-        }
-
-        #contenido-semestre {
             width: 100%;
-            height: 100%;
+            max-width: 800px;
+            flex-wrap: wrap;
         }
 
         .parciales {
             display: grid;
-            grid-auto-rows: 20rem;
-            grid-auto-flow: dense;
             grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 20rem;
             gap: 1rem;
         }
 
+        @media (max-width: 900px) {
+            .parciales {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .parciales {
+                grid-template-columns: 1fr;
+            }
+        }
+
         .titulo-parcial {
-            background-color: #c0c0c0;
+            background-color: #e6e6e6;
             border-radius: 20px;
             grid-column: span 3;
-            grid-auto-rows: 5rem;
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
-            height 50%;
+        }
+
+        @media (max-width: 900px) {
+            .titulo-parcial {
+                grid-column: span 2;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .titulo-parcial {
+                grid-column: span 1;
+            }
         }
 
         .practica {
@@ -88,47 +105,39 @@
             -webkit-text-fill-color: transparent;
             font-size: 100px;
             text-transform: uppercase;
+            text-align: center;
+            margin: 20px 0;
         }
 
         h2 {
             background: linear-gradient(90deg, #30a2ff, #72b6ee, #98bedd, #72b6ee, #30a2ff);
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-size: 50px;
+            font-size: 75px;
             text-transform: uppercase;
+            text-align: center;
         }
 
         a {
             text-align: center;
-            font-size: 30px;
+            font-size: 1rem;
             color: #30a2ff;
             text-decoration: none;
             background-color: #ffffff;
             border-radius: 5px;
             padding: 5px;
-            width: 125%;
+            width: 100%;
+            display: block;
         }
 
         a:hover {
-            text-align: center;
-            font-size: 30px;
             color: #ffffff;
-            text-decoration: none;
             background-color: #30a2ff;
-            border-radius: 5px;
-            padding: 5px;
-            width: 125%;
         }
 
         .practica a:hover {
-            text-align: center;
-            font-size: 30px;
             color: #30a2ff;
-            text-decoration: none;
             background-color: #ffffff;
-            border-radius: 5px;
-            padding: 5px;
-            width: 125%;
         }
 
         @keyframes fdeg {
@@ -288,8 +297,10 @@
                 <div class="titulo-parcial">
                     <h2>Parcial 3</h2>
                 </div>
-                <div class="practica">
-                    <a href="parcial_3/menu.html" style="text-decoration:none"><iframe src="parcial_3/menu.html" frameborder="0"></iframe><br><h4>Menu</h4></a>
+                <div class="practica" style="grid-column: span 3;">
+                    <a href="parcial_3/menu/menu.html" style="text-decoration:none">
+                        <iframe src="parcial_3/menu/menu.html" frameborder="0" width="100%" height="200"></iframe><br><h4>Menu</h4>
+                    </a>
                 </div>
             </div>
         </div>
